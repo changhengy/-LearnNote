@@ -12,17 +12,17 @@ https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html
 
 ---
 
-锁的分类和Java Lock 框架
+# 锁的分类和Java Lock 框架
 
-一、锁的分类
+## 一、锁的分类
 
 ![Java锁分类](..\images\Java主流锁.png)
 
 
 
-二、Java  Lock 框架
+## 二、Java  Lock 框架
 
-Lock相关类和接口都在 `java.util.concurrent.locks`包中，一共只有10个文件，其中3个接口类，3个抽象类，4个实体类，如下图：
+> Lock相关类和接口都在 `java.util.concurrent.locks`包中，一共只有10个文件，其中3个接口类，3个抽象类，4个实体类，如下图：
 
 ![](../images/Locks.png)
 
@@ -32,7 +32,7 @@ java.util.concurrent.locks下的接口和继承类关系简易结构图：
 
 ![](../images/JavaLockPF.png)
 
-2.1 Lock 接口
+### 2.1 Lock 接口
 
 观察Lock 接口源码，
 
@@ -47,27 +47,27 @@ public interface Lock {
 }
 ```
 
-2.1.1 lock()
+#### 2.1.1 lock()
 
-2.1.2 void lockInterruptibly() throws InterruptedException;
+#### 2.1.2 void lockInterruptibly() throws InterruptedException;
 
-2.1.3 boolean tryLock();
+#### 2.1.3 boolean tryLock();
 
-2.1.4 boolean tryLock(long time, TimeUnit unit) throws InterruptedException;
+#### 2.1.4 boolean tryLock(long time, TimeUnit unit) throws InterruptedException;
 
-2.1.5 void unlock();
+#### 2.1.5 void unlock();
 
-2.1.6 Condition newCondition();
-
-
-
-2.2 ReentrantLock 实现类
-
-2.3 ReentrantReadWriteLock 实现类
+#### 2.1.6 Condition newCondition();
 
 
 
-2.4 Lock 和 Condition  的关系
+### 2.2 ReentrantLock 实现类
+
+### 2.3 ReentrantReadWriteLock 实现类
+
+
+
+### 2.4 Lock 和 Condition  的关系
 
 https://www.cnblogs.com/noteless/p/10481286.html#6
 
