@@ -8,3 +8,9 @@ Git Hub https://github.com/FudanNLP/nlp-beginner
 
 复旦大学 计算机科学技术学院教授
 
+----
+
+B站 有他的视频开源，效果很好
+
+
+
