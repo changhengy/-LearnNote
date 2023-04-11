@@ -4,7 +4,18 @@ https://segmentfault.com/a/1190000041229788
 
 Activity 与 Fragment 之间常见的几种通信方式？
 LaunchMode 的应用场景？
+
+> https://blog.csdn.net/hequnwang10/article/details/124955649
+
 BroadcastReceiver 与LocalBroadcastReceiver 有什么区别？
+
+> https://www.jianshu.com/p/36dbff3516bc
+>
+> BroadcastReceiver是针对应用间、应用与系统间、应用内部进行通信的一种方式
+> LocalBroadcastReceiver仅在自己的应用内发送接收广播，也就是只有自己的应用能收到，数据更加安全广播只在这个程序里，而且效率更高。
+
+
+
 对于 Context，你了解多少?
 IntentFilter是什么？有哪些使用场景？
 谈一谈startService和bindService的区别，生命周期以及使用场景？
